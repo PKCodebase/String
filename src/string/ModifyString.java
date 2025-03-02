@@ -17,6 +17,8 @@ public class ModifyString {
             for(int i =0;i<ch.length;i++){
                 System.out.print(ch[i]+" ");
             }
+            System.out.print("\n");
+            System.out.println(str);//Original string doesn't change
 
     }
 }
