@@ -21,3 +21,6 @@ public class ReverseString {
     }
 }
 
+//Time complexity = O/n2 = O(n)
+//Space Complexity = O(1)
+
