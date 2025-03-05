@@ -23,7 +23,7 @@ public class CheckAnagram {
     }
     public static void main(String[] args) {
         String a = "anagram";
-        String b = "agaram";
+        String b = "yngaram";
         System.out.println(isAnagram(a, b));
     }
 
