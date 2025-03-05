@@ -3,15 +3,18 @@ package string;
 public class FirstUniqueCharacter1 {
     public int firstUniqChar(String s) {
         int[] freq = new int[58];
-        char [] ch =  s.toCharArray();
-        for (char c :ch) {
-            freq[c - 65]++;
+        for(int i=0;i<s.length();i++){
+            char ch = s.charAt(i);
+            freq[ch-65]++;
         }
-        for (int i = 0; i < s.length(); i++) {
-            char ch1 = s.charAt(i);
-            if (freq[ch1 - 65] == 1) {
-                return i;
-            }
+        for (int i = 0; i < freq.length; i++) {
+           if(freq[i]>0){
+               char ch = (char)(i+65);
+               int index = s.indexOf(ch);
+               if(index!=-1 && s.indexOf(ch,index+1)==-1){
+                   return index;
+               }
+           }
         }
         return -1;
     }
