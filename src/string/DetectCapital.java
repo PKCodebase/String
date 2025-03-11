@@ -20,3 +20,7 @@ public class DetectCapital {
         System.out.println(solution.detectCapitalUse(word));
     }
 }
+
+
+//Time Complexity: O(N)
+//Space Complexity: O(1)
