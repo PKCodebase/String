@@ -1,6 +1,6 @@
 package string;
 
-public class ReversePrefix {
+public class ReversePrefixOfWord {
     public static void main(String[] args) {
         System.out.println(reversePrefix("abcdefd", 'd'));
     }
