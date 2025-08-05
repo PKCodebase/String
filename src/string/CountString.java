@@ -10,7 +10,6 @@ public class CountString {
         Map<Character, Long> freqMap = str.chars()
                 .mapToObj(c -> (char) c) // Convert int to Character
                 .collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
-
         freqMap.forEach((ch, freq) -> System.out.print(ch + "" + freq));
     }
 }
