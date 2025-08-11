@@ -7,6 +7,7 @@ public class FirstOccurrenceString {
         if (hayLength < needleLength) {
             return -1;
         }
+        
         for (int i = 0; i <= hayLength - needleLength; i++) {
             int j = 0;
             while (j < needleLength && haystack.charAt(i + j) == needle.charAt(j)) {
